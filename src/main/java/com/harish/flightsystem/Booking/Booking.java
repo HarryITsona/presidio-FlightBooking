@@ -12,6 +12,7 @@ public class Booking {
     private String flightName;
     private String source;
     private Long id;
+    private Long userID;
 
     public String getFlightName() {
         return flightName;
@@ -19,6 +20,14 @@ public class Booking {
 
     public void setFlightName(String flightName) {
         this.flightName = flightName;
+    }
+
+     public String getUserID() {
+        return userID;
+    }
+
+    public void setUserId(String userID) {
+        this.userID = userID;
     }
 
     public String getSource() {

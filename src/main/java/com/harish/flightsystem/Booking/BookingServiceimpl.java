@@ -13,17 +13,17 @@ public class BookingtServiceImpl implements BookingService {
     @Autowired
     BookingRepository BookingRepository;
     @Override
-    public List<Flights> getAllFlight() {
-        return flightRepository.findAll();
+    public List<Flights> getAllBooking() {
+        return bookingRepository.findAll();
     }
 
     @Override
-    public void addFlight(Flights flights) {
-            flightRepository.save(flights);
+    public void addBooking(Booking booking) {
+            bookingRepository.save(booking);
     }
 
     @Override
-    public List<Flights> getFlightById(long id) {
-        return flightRepository.findAllById(id);
+    public List<Flights> getBookingById(long id) {
+        return bookingRepository.findAllById(id);
     }
 }

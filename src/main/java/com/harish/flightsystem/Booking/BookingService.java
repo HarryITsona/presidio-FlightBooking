@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface BookingService {
 
-    public List<Flights> getAllFlight();
-    public  void addFlight(Flights flights);
-    public List<Flights>  getFlightById(long id);
+    public List<Booking> getAllBooking();
+    public  void addBooking(Booking booking);
+    public List<Booking>  getBookingById(long id);
 }
